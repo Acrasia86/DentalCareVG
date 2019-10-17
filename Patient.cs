@@ -264,6 +264,17 @@ namespace TestarTentan
 
         }
 
+        public void DeleteWorker()
+        {
+            Console.Clear();
+            Console.Write("What id would you like to remove: ");
+
+            string id = Console.ReadLine();
+
+            dentistDictionary.Remove(id);
+
+        }
+
 
 
         }

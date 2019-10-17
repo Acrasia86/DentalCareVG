@@ -22,7 +22,8 @@ namespace TestarTentan
                 Console.WriteLine("3. Registrera patient");
                 Console.WriteLine("4. Registrera annställd");
                 Console.WriteLine("5. Lista anställda");
-                Console.WriteLine("6. Avsluta");
+                Console.WriteLine("6. Ta bort anställd");
+                Console.WriteLine("7. Avsluta");
 
                 int userInput = int.Parse(Console.ReadLine());
 
@@ -55,6 +56,9 @@ namespace TestarTentan
                         break;
 
                     case 6:
+                        patient.DeleteWorker();
+                        break;
+                    case 7:
                         shouldNotExit = false;
                         break;
 
