@@ -20,7 +20,7 @@ namespace TestarTentan
                 Console.WriteLine("1. Skapa reservation");
                 Console.WriteLine("2. Lista reservation");
                 Console.WriteLine("3. Registrera patient");
-                Console.WriteLine("4. Registrera tandläkare");
+                Console.WriteLine("4. Registrera annställd");
                 Console.WriteLine("5. Lista anställda");
                 Console.WriteLine("6. Avsluta");
 

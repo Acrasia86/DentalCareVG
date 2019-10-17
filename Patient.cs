@@ -227,6 +227,8 @@ namespace TestarTentan
 
         public void ListBookings()
         {
+            Console.Clear();
+
             Console.WriteLine("Patient                           Reason                           Date ");
             Console.WriteLine("---------------------------------------------------------------------------");
             foreach (var booking in reservationDictionary)
@@ -243,14 +245,17 @@ namespace TestarTentan
 
         public void ListWorkers()
         {
+            Console.Clear();
+
             Console.WriteLine("Employee                                                    Id"      );
             Console.WriteLine("---------------------------------------------------------------------");
 
             foreach (var dentist in dentistDictionary)
             {
+                Console.WriteLine($"{dentist.Value.FirstName} {dentist.Value.LastName}, {dentist.Value.DentistMessage()}                                          {dentist.Value.Id}");
                 foreach (var dental in dentalhDictionary)
                 {
-                    Console.WriteLine($"{dentist.Value.FirstName} {dentist.Value.LastName}, {dentist.Value.DentistMessage()}                                  {dentist.Value.Id}\n{dental.Value.FirstName} {dental.Value.LastName}, {dental.Value.DentalHMessage()}                                {dental.Value.Id}");
+                    Console.WriteLine($"{dental.Value.FirstName} {dental.Value.LastName}, {dental.Value.DentalHMessage()}                                   {dental.Value.Id}");
                 }
                 
             }
